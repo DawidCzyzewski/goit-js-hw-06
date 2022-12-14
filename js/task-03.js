@@ -18,6 +18,6 @@ const imagesList = document.querySelector(".gallery");
 const listOfImages = images.forEach((imageItem) => {
   imagesList.insertAdjacentHTML(
     "beforeend",
-    `<li style="margin: 42px; list-style-type: none; display: inline;" ><img src="${imageItem.url}" alt="${imageItem.alt} height="auto" width="320px"  "style="border: solid green 3px; padding: 20px"/></li>`
+    `<li style="margin: 42px; list-style-type: none; display: inline;" ><img src="${imageItem.url}" alt="${imageItem.alt}" height="auto" width="320px"  "style="border: solid green 3px; padding: 20px"/></li>`
   );
 });
