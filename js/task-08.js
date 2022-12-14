@@ -9,9 +9,10 @@ const loginSubmit = () => {
   if (email.value === "" || password.value === "") {
     window.alert("Please fill in all the fields");
   } else {
-    console.log(
-      `${email.name}: ${email.value}, ${password.name}: ${password.value}`
-    );
+    console.log({
+      email: email.value,
+      password: password.value,
+    });
     event.currentTarget.reset();
   }
 };
